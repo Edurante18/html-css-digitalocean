@@ -1,0 +1,29 @@
+nav{
+    padding: 0 15%;
+    min-height: 50px;
+}
+
+.navbar-brand {
+    padding-right: 10%;
+}
+
+.navbar-right button {
+    margin-top: 15%;
+    background-color: transparent;
+    border: 1px solid lightseagreen;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: lightseagreen;
+}
+
+.navbar-right button a {
+ color: lightseagreen;
+}
+
+nav a .glyphicon {
+    vertical-align: text-bottom;
+}
+
+section.fishes-theme {
+    background-image: url();
+}
