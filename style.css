@@ -17,6 +17,18 @@ nav a {
     margin-right: 7.5%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 ul {
     list-style: none;
 }
@@ -25,6 +37,17 @@ nav ul>li {
     font-size: 13px;
     float: left;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .navbar button {
     margin-top: 15%;
@@ -213,24 +236,28 @@ header .bg-grey>a {
     margin-bottom: 60px;
 }
 
-.main-center .bg-lightgrey .row.center-block p {
+.main-center .bg-lightgrey p {
     color: grey;
     font-size: 20px;
     margin-bottom: 60px;
 }
 
-.main-center .bg-lightgrey .row.center-block div :not(.slider) {
-    width: fit-content;
-}
-
-.main-center .bg-lightgrey .row.center-block div.slider>img{
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.main-center .bg-lightgrey .row.center-block .glyphicon {
+.glyphicon-chevron-left, .glyphicon-chevron-right {
     font-size: 26px;
+    margin: 0;
+    width: 9%;
+    text-align: center;
+}
+
+.first.slider {
+    max-width: 500px;
+    margin: auto;
+}
+
+.first.slider img {
+    height: auto;
+    margin: 0;
+    width: 80%;
 }
 
 div.circle {
@@ -321,32 +348,30 @@ div.circle.full {
     font-weight: bolder;
 }
 
-.main-bot.bg-lightgrey .row {
-    margin: 55px 0px 20px 0px;
+.second.slider {
+    max-width: 600px;
 }
 
-.main-bot.bg-lightgrey .slider.white {
-    background-color: white;
-    max-width: 70%;
-    padding-top: 45px;
-    margin-bottom: 15px;
-    text-align: center;
-
+.second.slider>div {
+    display: inline-block;
+    background: white;
+    width: 80%;
+    vertical-align: middle;
+    padding: 7.5% 0 7.5% 0;
 }
 
-.main-bot.bg-lightgrey .slider.white img {
-    max-width: 75%;
-    margin-bottom: 20px;
-    text-align: center;
+.second.slider p {
+    font-size: 18px;
 }
 
-.main-bot.bg-lightgrey .slider.white p {
-    color: grey;
-    font-size: 17px;
+.second.slider p:first-of-type {
+    margin-top: 20px;
 }
 
-.main-bot.bg-lightgrey .glyphicon {
-    font-size: 26px;
+.second.slider img {
+    width: 55%;
+    display: block;
+    margin: auto;
 }
 
 .footer-top.bg-blue {
@@ -456,7 +481,7 @@ div#support-chat>div{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    padding: 2.5px 7.5px;
+    padding: 2px 7.5px;
     font-weight: bold;
     border: 4px solid white;
     color: white;
