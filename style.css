@@ -3,10 +3,10 @@ html {
 }
 
 nav{
-    min-height: 50px;
+    margin: 0;
     padding: 0 15%;
     width: 100%;
-    margin: 0;
+    min-height: 50px;
 }
 
 nav a {
@@ -14,14 +14,19 @@ nav a {
 }
 
 .navbar-brand {
-    padding-right: 10%;
+    margin-right: 7.5%;
 }
 
 ul {
     list-style: none;
 }
 
-.navbar-left button {
+nav ul>li {
+    font-size: 13px;
+    float: left;
+}
+
+.navbar button {
     margin-top: 15%;
     background-color: transparent;
     border: 1px solid #006AFF;
@@ -30,7 +35,7 @@ ul {
     color: #006AFF;
 }
 
-.navbar-left button a {
+.navbar-right button a {
     color: #006AFF;
 }
 
@@ -53,22 +58,29 @@ section.bg-fishes-theme {
     min-height: 400px;
 }
 
+section.bg-fishes-theme>div:first-of-type {
+    margin: 5% 0 5% 0;
+}
+
 section.bg-fishes-theme>div:first-of-type>h1{
     color: white;
-    font-size: 62px;
-    margin-top: 0px;
+    font-size: 50px;
 }
 
 section.bg-fishes-theme>div:first-of-type>p {
     color: #c1c6d3;
-    font-size: 21px;
+    font-size: 22px;
+    margin-top: 5%;
 }
 
 .bg-fishes-theme .bg-white {
+    margin: 17.5% 0 17.5% 0;
     background-color: white;
-    padding: 15px 15px;
+    padding: 2.5% 5%;
     border-radius: 5px;
     vertical-align: middle;
+    width: fit-content;
+    height: max-content;
 }
 
 .bg-fishes-theme .bg-white input, button {
@@ -81,14 +93,13 @@ section.bg-fishes-theme>div:first-of-type>p {
 }
 
 .bg-fishes-theme .bg-white>h3:first-of-type {
-    font-size: 27px;
-    line-height: 22px;
+    font-size: 23px;
     font-weight: bolder;
 }
 
 .bg-fishes-theme .bg-white>h3>a {
     color: #006AFF;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bolder;
     margin-bottom: 5px;
 }
@@ -107,13 +118,13 @@ section.bg-fishes-theme>div:first-of-type>p {
     color: white;
 }
 
-.bg-fishes-theme #google-btn>a{
-    color: black
+.bg-fishes-theme #google-btn{
+    height: fit-content;
 }
 
-.bg-fishes-theme #google-btn>a {
-    float: left;
-    padding: 0 27%;
+.bg-fishes-theme #google-btn>a{
+    color: black;
+    text-align: center;
 }
 
 header .bg-grey {
@@ -342,6 +353,10 @@ div.circle.full {
     min-height: 150px;
 }
 
+.footer-top.bg-blue a {
+    color: #006AFF;
+}
+
 footer h3, footer strong {
     color: white;
 }
@@ -359,6 +374,10 @@ footer h3, footer strong {
     min-height: 500px;
 }
 
+.footer-bot.bg-darkblue #page-info {
+    margin-right: 60px;
+}
+
 .footer-bot.bg-darkblue #page-info>p:first-of-type{
     color: #A0A8B9;
     margin-top: 15px;
@@ -374,10 +393,10 @@ footer h3, footer strong {
     }
     
 div.social-networks-icons > img {
-    margin-right: 12.5px;
+    margin-right: 10px;
     margin-bottom: 30px;
     border-radius: 7.5px;
-    max-height: 25px;
+    max-height: 20px;
     vertical-align: middle;
 }
 
@@ -402,27 +421,74 @@ div.social-networks-icons #yt {
 }
 
 div#support-chat {
-    float: right;
-    position:;
-    max-width: 350px;
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    min-width: 420px;
 }
 
-span#help, span#shark {
+div#support-chat>div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -5px;
+}
+
+#shark {
     width: fit-content;
-    display: inline;
-    float: left;
+    z-index: 1;
+    border: 1px solid #031C4E;
 }
 
-span#help {
-    background-color: white;
-}
-
-span#shark {
+#shark {
     background-color: #006AFF;
     padding: 7.5px 0;
-    border-radius: 5px;
+    border-radius: 7.5px;
+    vertical-align: middle;
+    max-width: 77.5px;
+    position: relative;
 }
 
-span#shark>img {
+#shark>img {
     max-width: 75px;
 }
+
+#shark>span#badge {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 2.5px 7.5px;
+    font-weight: bold;
+    border: 4px solid white;
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.bubble-speech {
+    position: relative;
+    font-size: 14px;
+    max-width: fit-content;
+    background: white;
+    border-radius: 7.5px;
+    max-width: 290px;
+    border-top: 1px solid #031C4E;
+    border-left: 1px solid #031C4E;
+    border-bottom: 1px solid #031C4E;
+    padding: 10px;
+    z-index: 2;
+}
+
+.bubble-speech:after {
+    content: "";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    border-bottom: 10px solid transparent;
+    top: 35%;
+    right: -16px;
+    transform: rotate(270deg);
+   }
+  
