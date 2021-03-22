@@ -2,8 +2,7 @@ html {
     font-family: Helvetica,sans-serif, Arial; 
 }
 
-nav{
-    margin: 0;
+nav{ 
     padding: 0 15%;
     width: 100%;
     min-height: 50px;
@@ -14,40 +13,25 @@ nav a {
 }
 
 .navbar-brand {
-    margin-right: 7.5%;
+    margin-right: 5%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 ul {
     list-style: none;
 }
 
-nav ul>li {
-    font-size: 13px;
+ul:first-of-type {
     float: left;
 }
 
+ul:last-of-type {
+    float: right;
+}
 
-
-
-
-
-
-
-
-
-
+nav ul>li {
+    font-size: 14px;
+    float: left;
+}
 
 .navbar button {
     margin-top: 15%;
@@ -96,8 +80,14 @@ section.bg-fishes-theme>div:first-of-type>p {
     margin-top: 5%;
 }
 
+.bg-fishes-theme div:first-of-type {
+    vertical-align: middle;
+}
+
+
 .bg-fishes-theme .bg-white {
     margin: 17.5% 0 17.5% 0;
+    float: right;
     background-color: white;
     padding: 2.5% 5%;
     border-radius: 5px;
@@ -358,6 +348,7 @@ div.circle.full {
     width: 80%;
     vertical-align: middle;
     padding: 7.5% 0 7.5% 0;
+    margin-bottom: 12.5%;
 }
 
 .second.slider p {
@@ -448,8 +439,8 @@ div.social-networks-icons #yt {
 div#support-chat {
     position: fixed;
     bottom: 40px;
-    right: 0;
-    min-width: 420px;
+    right: 40px;
+    max-width: 420px;
 }
 
 div#support-chat>div{
@@ -461,10 +452,7 @@ div#support-chat>div{
 #shark {
     width: fit-content;
     z-index: 1;
-    border: 1px solid #031C4E;
-}
-
-#shark {
+    border: 2px solid #031C4E;
     background-color: #006AFF;
     padding: 7.5px 0;
     border-radius: 7.5px;
@@ -494,13 +482,14 @@ div#support-chat>div{
 .bubble-speech {
     position: relative;
     font-size: 14px;
+    font-weight: 550;
     max-width: fit-content;
     background: white;
     border-radius: 7.5px;
     max-width: 290px;
-    border-top: 1px solid #031C4E;
-    border-left: 1px solid #031C4E;
-    border-bottom: 1px solid #031C4E;
+    border-top: 2px solid #031C4E;
+    border-left: 2px solid #031C4E;
+    border-bottom: 2px solid #031C4E;
     padding: 10px;
     z-index: 2;
 }
@@ -516,4 +505,3 @@ div#support-chat>div{
     right: -16px;
     transform: rotate(270deg);
    }
-  
