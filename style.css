@@ -20,11 +20,11 @@ ul {
     list-style: none;
 }
 
-ul:first-of-type {
+nav ul:first-of-type {
     float: left;
 }
 
-ul:last-of-type {
+nav ul:last-of-type {
     float: right;
 }
 
@@ -83,7 +83,6 @@ section.bg-fishes-theme>div:first-of-type>p {
 .bg-fishes-theme div:first-of-type {
     vertical-align: middle;
 }
-
 
 .bg-fishes-theme .bg-white {
     margin: 17.5% 0 17.5% 0;
@@ -313,7 +312,6 @@ div.circle.full {
 .main-center .bg-blue ul>li>span:nth-of-type(1) {
     margin-right: 45px;
     font-weight: bold;
-
     color: white;
     float: left;
 }
