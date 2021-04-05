@@ -12,8 +12,8 @@ nav a {
     color: black;
 }
 
-.navbar-brand {
-    margin-right: 5%;
+.navbar-header {
+    display: inline-block;
 }
 
 ul {
@@ -21,10 +21,11 @@ ul {
 }
 
 nav ul:first-of-type {
-    float: left;
+    margin-left: 5%;
 }
 
-nav ul:last-of-type {
+nav ul:nth-of-type(2),
+nav ul:nth-of-type(3) {
     float: right;
 }
 
@@ -42,7 +43,7 @@ nav ul>li {
     color: #006AFF;
 }
 
-.navbar-right button a {
+nav button a {
     color: #006AFF;
 }
 
@@ -63,10 +64,8 @@ section.bg-fishes-theme {
     background-image: url(img/bg-banner-home.jpg);
     background-size: cover;
     min-height: 400px;
-}
-
-section.bg-fishes-theme>div:first-of-type {
-    margin: 5% 0 5% 0;
+    display: flex;
+    align-items: center;
 }
 
 section.bg-fishes-theme>div:first-of-type>h1{
